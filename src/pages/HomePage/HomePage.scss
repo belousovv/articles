@@ -1,0 +1,26 @@
+.home {
+  &__top {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  &__btn + &__btn {
+    margin-left: 10px;
+  }
+
+  &__content {
+      padding: 25px 0;
+  }
+
+  &__btn--center {
+      display: flex;
+      justify-content: center;
+  }
+}

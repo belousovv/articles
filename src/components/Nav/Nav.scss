@@ -1,0 +1,22 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    &__item {
+        &+& {
+            margin-left: 20px;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #999;
+    }
+
+    &__link--active {
+        color: #fff;
+    }
+}

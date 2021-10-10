@@ -1,0 +1,12 @@
+.header {
+  background-color: #353a40;
+
+  &__inner {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+  }
+}
