@@ -1,34 +1,86 @@
 .article-item {
-    padding: 25px 20px;
-    background-color: #ccc;
-    border-radius: 4px;
-    height: 250px;
+  padding: 25px 20px;
+  border-radius: 4px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    margin-bottom: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__btn {
+    padding: 6px;
+    border: 1px solid #999;
+    background-color: transparent;
+    cursor: pointer;
+
+    & + & {
+      border-left: none;
+    }
+  }
+}
+
+.info-modal {
+  &__title {
+    padding: 15px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__content {
+    padding: 15px;
+  }
+
+  &__content-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__content-text {
+    font-size: 18px;
+  }
+}
+
+.color-modal {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
-    &__title {
-        font-size: 24px;
-        margin-bottom: 15px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+    &__list {
+        font-size: 32px;
     }
 
-    &__text {
-        margin-bottom: 15px;
-        margin-bottom: auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    &__btn {
-        padding: 6px;
-        border: 1px solid #999;
-        background-color: transparent;
+    &__item {
+        margin-bottom: 10px;
+        list-style-type: circle;
         cursor: pointer;
+    }
 
-        &+& {
-            border-left: none;
-        }
+    &__item--grey {
+      color: rgb(105, 105, 105);
+    }
+
+    &__item--red {
+      color: #c05252;
+    }
+
+    &__item--green {
+      color: #59c244;
     }
 }

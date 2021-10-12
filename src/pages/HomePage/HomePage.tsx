@@ -45,6 +45,7 @@ const HomePage: React.FC = () => {
       scrollTarget.current?.scrollIntoView({ behavior: "smooth" });
       setIsClicked(false);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visible]);
 
   useEffect(() => {

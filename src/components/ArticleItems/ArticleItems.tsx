@@ -14,7 +14,7 @@ const ArticleItems: React.FC<PropsType> = ({ visible, posts, postsPerRow }) => {
 
   const mappedPosts = posts
     ?.slice(0, visible)
-    .map((p) => <ArticleItem key={p.id} title={p.title} text={p.body} postsPerRow={postsPerRow}/>);
+    .map((p) => <ArticleItem key={p.id} post={p} title={p.title} text={p.body} postsPerRow={postsPerRow}/>);
 
   const styles = {
     gridTemplateColumns: `repeat(${postsPerRow}, 1fr)`

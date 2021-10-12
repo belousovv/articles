@@ -37,6 +37,7 @@ const NewArticle: React.FC<PropsType> = ({setIsActive}) => {
       dispatch(actions.postAdded(post));
       setIsActive(false);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, description]);
 
   return (
