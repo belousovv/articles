@@ -1,0 +1,7 @@
+.article-items {
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}

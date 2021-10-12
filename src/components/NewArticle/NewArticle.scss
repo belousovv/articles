@@ -1,0 +1,34 @@
+.new-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &__inner {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        height: 200px;
+        resize: none;
+    }
+
+    &__create {
+        margin-top: 20px;
+    }
+}

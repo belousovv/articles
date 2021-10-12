@@ -1,0 +1,26 @@
+.modal {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.modal--active {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(#ccc, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content--active {
+    max-width: 600px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
